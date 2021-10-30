@@ -1,10 +1,10 @@
-import { FC, useState } from 'react';
-import { AddItemButtonProps } from './intefaces';
+import { useState } from 'react';
+import { AddNewItemProps } from './intefaces';
 import { NewItemFormContainer } from '../NewItemFormContainer';
 
 import { AddItemButtonStyle } from './styles';
 
-export const AddItemButton = (props: AddItemButtonProps) => {
+export const AddNewItem = (props: AddNewItemProps) => {
     const [showForm, setShowForm] = useState(false);
     const { onAdd, toggleButtonText, dark } = props;
 

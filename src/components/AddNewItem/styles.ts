@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { AddItemButtonProps } from './intefaces';
+import { AddNewItemProps } from './intefaces';
 
-export const AddItemButtonStyle = styled.button<Partial<AddItemButtonProps>>`
+export const AddItemButtonStyle = styled.button<Partial<AddNewItemProps>>`
     background-color: #ffffff3d;
     border-radius: 3px;
     border: none;

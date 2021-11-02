@@ -1,3 +1,6 @@
+import { Dispatch } from 'react';
+import { Action } from './Actions/interfaces';
+
 export type Task = {
     id: string;
     text: string;
@@ -16,4 +19,5 @@ export type AppState = {
 export type AppStateContextProps = {
     lists: List[];
     getTasksByListId(id: string): Task[];
+    dispatch: Dispatch<Action>;
 };

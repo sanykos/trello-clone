@@ -4,7 +4,7 @@ import { AppStateContextProps } from './intefaces';
 
 const AppStateContext = createContext<AppStateContextProps>({} as AppStateContextProps);
 
-export const useState = () => {
+export const useAppState = () => {
     return useContext(AppStateContext);
 };
 

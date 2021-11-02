@@ -1,4 +1,4 @@
 export type ColumnProps = {
+    id: string;
     text: string;
-    children?: React.ReactNode;
 };

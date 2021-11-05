@@ -1,5 +1,5 @@
 import { Dispatch } from 'react';
-import { Action } from './Actions/interfaces';
+import { Action } from './actions/interfaces';
 
 export type Task = {
     id: string;

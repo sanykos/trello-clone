@@ -1,4 +1,5 @@
-import { createContext, useContext, useReducer, FC } from 'react';
+import { createContext, useContext, FC } from 'react';
+import { useImmerReducer } from 'use-immer';
 import { appStateReducer } from './reducers';
 import { AppStateContextProps } from './intefaces';
 import { appData } from './mocks';
@@ -10,8 +11,8 @@ export const useAppState = () => {
 };
 
 export const AppStateProvider: FC = ({ children }) => {
-    const [state, dispatch] = useReducer(appStateReducer, appData);
-    const { lists } = appData;
+    const [state, dispatch] = useImmerReducer(appStateReducer, appData);
+    const { lists } = state;
     const getTasksByListId = (id: string) => {
         return lists.find((list) => list.id === id)?.tasks || [];
     };

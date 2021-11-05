@@ -12,12 +12,22 @@ export type List = {
     tasks: Task[];
 };
 
+export type ColumnDragItem = {
+    id: string;
+    text: string;
+    type: 'COLUMN';
+};
+
+export type DragItem = ColumnDragItem;
+
 export type AppState = {
     lists: List[];
+    draggedItem: DragItem | null;
 };
 
 export type AppStateContextProps = {
     lists: List[];
+    draggedItem: DragItem | null;
     getTasksByListId(id: string): Task[];
     dispatch: Dispatch<Action>;
 };

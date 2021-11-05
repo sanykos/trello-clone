@@ -1,6 +1,7 @@
 import { AppState } from './intefaces';
 
 export const appData: AppState = {
+    draggedItem: null,
     lists: [
         {
             id: '0',

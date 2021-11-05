@@ -1,3 +1,5 @@
+import { DragItem } from '../intefaces';
+
 export interface AddListAction {
     type: 'ADD_LIST';
     payload: string;
@@ -16,4 +18,9 @@ export interface moveListAction {
     };
 }
 
-export type Action = AddListAction | AddTaskAction | moveListAction;
+export interface setDraggedItemAction {
+    type: 'SET_DRAGGED_ITEM';
+    payload: DragItem | null;
+}
+
+export type Action = AddListAction | AddTaskAction | moveListAction | setDraggedItemAction;

@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 import { findItemIndexById } from '../../utils/findItemIndexById';
 import { moveItem } from '../../utils/moveItem';
-import { Action } from '../actions/interfaces';
+import { Action } from '../Actions/interfaces';
 import { AppState } from '../intefaces';
 
 export const appStateReducer = (draft: AppState, action: Action): AppState | void => {

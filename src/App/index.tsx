@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { addList } from '../state/actions';
+import { addList } from '../state/Actions';
 import { Column } from '../components/Column';
 import { AddNewItem } from '../components/AddNewItem';
 import { useAppState } from '../state/AppStateContext';

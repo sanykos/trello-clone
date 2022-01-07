@@ -12,13 +12,20 @@ export type List = {
     tasks: Task[];
 };
 
+export type CardDragItem = {
+    id: string
+    columnId: string
+    text: string
+    type: "CARD"
+}
+
 export type ColumnDragItem = {
     id: string;
     text: string;
     type: 'COLUMN';
 };
 
-export type DragItem = ColumnDragItem;
+export type DragItem = ColumnDragItem | CardDragItem;
 
 export type AppState = {
     lists: List[];

@@ -23,4 +23,14 @@ export interface setDraggedItemAction {
     payload: DragItem | null;
 }
 
-export type Action = AddListAction | AddTaskAction | moveListAction | setDraggedItemAction;
+export interface moveTask {
+    type: 'MOVE_TASK',
+    payload: {
+        draggedItemId: string
+        hoveredItemId: string | null
+        sourceColumnId: string
+        targetColumnId: string
+    }
+}
+
+export type Action = AddListAction | AddTaskAction | moveListAction | setDraggedItemAction | moveTask;

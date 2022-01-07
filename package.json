@@ -1,5 +1,6 @@
 {
   "name": "trello-clone",
+  "homepage": "https://sanykos.github.io/trello-clone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,6 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -61,6 +63,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "2.x",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.4.1"
   }
 }

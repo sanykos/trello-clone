@@ -1,4 +1,4 @@
-export interface DragPreviewContainerProp {
+export interface DragPreviewContainerProps {
     isHidden?: boolean;
     isPreview?: boolean;
 }
